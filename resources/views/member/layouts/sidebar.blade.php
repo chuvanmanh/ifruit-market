@@ -1,0 +1,178 @@
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin')}}">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-store"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">IFRUITS</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Sales
+    </div>
+
+    <!--Orders -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('order.index')}}">
+            <i class="fas fa-hammer fa-chart-area"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Products
+    </div>
+
+    {{-- Products --}}
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#productCollapse" aria-expanded="true" aria-controls="productCollapse">
+            <i class="fas fa-cubes"></i>
+            <span>Products</span>
+        </a>
+        <div id="productCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Product Options:</h6>
+                <a class="collapse-item" href="{{route('product.index')}}">Products</a>
+                <a class="collapse-item" href="{{route('product.create')}}">Add Product</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Categories -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse">
+            <i class="fas fa-sitemap"></i>
+            <span>Category</span>
+        </a>
+        <div id="categoryCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Category Options:</h6>
+                <a class="collapse-item" href="{{route('category.index')}}">Category</a>
+                <a class="collapse-item" href="{{route('category.create')}}">Add Category</a>
+            </div>
+        </div>
+    </li>
+
+    {{-- Brands --}}
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#brandCollapse" aria-expanded="true" aria-controls="brandCollapse">
+            <i class="fas fa-table"></i>
+            <span>Brands</span>
+        </a>
+        <div id="brandCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Brand Options:</h6>
+                <a class="collapse-item" href="{{route('brand.index')}}">Brands</a>
+                <a class="collapse-item" href="{{route('brand.create')}}">Add Brand</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Reviews -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('review.index')}}">
+            <i class="fas fa-comments"></i>
+            <span>Reviews</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Customers
+    </div>
+
+    <!-- Users -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('users.index')}}">
+            <i class="fas fa-users"></i>
+            <span>Users</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Content
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('file-manager')}}">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Media Manager</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-image"></i>
+        <span>Banners</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Banner Options:</h6>
+          <a class="collapse-item" href="{{route('banner.index')}}">Banners</a>
+          <a class="collapse-item" href="{{route('banner.create')}}">Add Banners</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#postCollapse" aria-expanded="true" aria-controls="postCollapse">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Posts</span>
+        </a>
+        <div id="postCollapse" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Post Options:</h6>
+                <a class="collapse-item" href="{{route('post.index')}}">Posts</a>
+                <a class="collapse-item" href="{{route('post.create')}}">Add Post</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Tags -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#tagCollapse" aria-expanded="true" aria-controls="tagCollapse">
+            <i class="fas fa-tags fa-folder"></i>
+            <span>Tags</span>
+        </a>
+        <div id="tagCollapse" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Tag Options:</h6>
+                <a class="collapse-item" href="{{route('post-tag.index')}}">Tag</a>
+                <a class="collapse-item" href="{{route('post-tag.create')}}">Add Tag</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Comments -->
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('comment.index')}}">
+            <i class="fas fa-comments fa-chart-area"></i>
+            <span>Comments</span>
+        </a>
+    </li>
+
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
